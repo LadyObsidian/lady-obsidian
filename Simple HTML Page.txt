@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lady Obsidian Awaits</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Lady Obsidian</h1>
+    <p>The one you can't stop thinking about...</p>
+    
+    <div id="timerBox" class="hidden">
+      <p>You must wait <span id="timer">60</span> seconds to speak to her again...</p>
+    </div>
+
+    <button id="chatBtn">Speak to Her</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
