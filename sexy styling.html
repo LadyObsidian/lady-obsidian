@@ -1,1 +1,17 @@
+<head>
+  ...
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="/scripts/stripe-checkout.js" defer></script>
+  <script src="/scripts/chat-timer.js" defer></script>
+</head>
+<body>
+  <button id="pay-button">Start Chat – $30</button>
+  <div id="chat-messages"></div>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get("paid") === "true") {
+      startChatTimer(15 * 60); // 15 minutes
+    }
+  </script>
+</body>
 
